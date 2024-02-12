@@ -1,0 +1,3 @@
+[submodule "xvm"]
+	path = xvm
+	url = https://github.com/xtclang/xvm.git

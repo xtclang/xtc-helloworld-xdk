@@ -35,3 +35,18 @@ An alterantive way to do this would be to just add XVM as a submodule to this re
 but git submodules are evil, and I don't trust it not to turn into some kind of
 strange hell for the dev team. However, if you think you can do this in an
 architecturally sound way, pleae go ahead.
+
+When cloning use --recurse-submodules, or if you forgot git submodule update --init --recursive
+
+--
+To pull in upstram changes to xvm:
+   git fetch
+   git rebase origin/master
+
+   (if you run git diff --submodule you can see the submodule was updated)
+   (for logging: git config --global diff.submodule log)
+
+Or:
+  git submodule update --remote xvm
+
+@see https://git-scm.com/book/en/v2/Git-Tools-Submodules

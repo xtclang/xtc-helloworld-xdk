@@ -4,7 +4,7 @@ plugins {
 }
 
 dependencies {
-    val xtcVersion: String by project
+    val xtcVersion: String by properties
     xdkDistribution("org.xtclang:xdk:$xtcVersion")
 }
 
